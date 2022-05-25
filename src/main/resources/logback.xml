@@ -4,21 +4,21 @@
         <file>logs/scheduler.log</file>
         <append>false</append>
         <encoder>
-            <pattern>%date{HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %m%n</pattern>
+            <pattern>%date{dd-MM-yyyy HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %.-100m%n</pattern>
         </encoder>
     </appender>
     <appender name="TASKONE-FILE" class="ch.qos.logback.core.FileAppender">
         <file>logs/task_1.log</file>
         <append>false</append>
         <encoder>
-            <pattern>%date{HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %m%n</pattern>
+            <pattern>%date{dd-MM-yyyy HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %.-100m%n</pattern>
         </encoder>
     </appender>
     <appender name="TASKTWO-FILE" class="ch.qos.logback.core.FileAppender">
         <file>logs/task_2.log</file>
         <append>false</append>
         <encoder>
-            <pattern>%date{HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %m%n</pattern>
+            <pattern>%date{dd-MM-yyyy HH:mm:ss.SSS} %-5p %logger{36} %X{akkaSource} [%file:%line] - %.-100m%n</pattern>
         </encoder>
     </appender>
     <!-- additivity=false ensures analytics data only goes to the analytics log -->
