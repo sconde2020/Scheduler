@@ -18,7 +18,7 @@ public class Task2 {
 
         String strDate = dateFormat.format(new Date());
 
-        logger.info(
+        System.out.println(
                 "Cron job 2 Scheduler: Job running at - "
                         + strDate);
     }
